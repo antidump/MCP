@@ -1,0 +1,34 @@
+AdEx AURA API, terutama setelah integrasi dengan CoinGecko, memiliki akses ke data real-time lebih dari 9 juta token di lebih dari 1.500 exchange (DEX dan CEX) dan mendukung lebih dari 200 blockchain network. Ini artinya, AURA API memang dapat membaca, memantau, dan menganalisis data dari seluruh DEX (Decentralized Exchange) di chain yang didukung—bukan hanya satu atau beberapa DEX saja.
+
+Kemampuan utamanya:
+
+Mengambil data seluruh token/ticker di DEX di chain yang terhubung.
+
+Memberikan insight portofolio berdasarkan data live dari banyak DEX dan chain.
+
+Otomatisasi strategi trading berdasarkan deteksi peluang, yield, airdrop, liquidation risk, dsb.
+
+Mendukung real-time analisis dan perintah eksekusi langsung ke smart contract.
+
+Jadi, AURA API ini memang didesain sebagai agregator lintas DEX dan chain, buka sekedar akses ke satu protokol DeFi saja. Akses, monitoring, dan analisis DeFi di seluruh ekosistem chain-supported menjadi fitur utama AURA API.​
+
+berarti dia bisa memilih dex mana yg terbaik, untuk chain ya semua yg di dukungnya saja tergantung permintaan user. untuk sign saya tidak mau demo, tapi saya mau real
+
+11 minutes ago
+Agent encountered an error while running, we are investigating the issue.
+
+AdEx AURA API, terutama setelah integrasi dengan CoinGecko, memiliki akses ke data real-time lebih dari 9 juta token di lebih dari 1.500 exchange (DEX dan CEX) dan mendukung lebih dari 200 blockchain network. Ini artinya, AURA API memang dapat membaca, memantau, dan menganalisis data dari seluruh DEX (Decentralized Exchange) di chain yang didukung—bukan hanya satu atau beberapa DEX saja.
+
+Kemampuan utamanya:
+
+Mengambil data seluruh token/ticker di DEX di chain yang terhubung.
+
+Memberikan insight portofolio berdasarkan data live dari banyak DEX dan chain.
+
+Otomatisasi strategi trading berdasarkan deteksi peluang, yield, airdrop, liquidation risk, dsb.
+
+Mendukung real-time analisis dan perintah eksekusi langsung ke smart contract.
+
+Jadi, AURA API ini memang didesain sebagai agregator lintas DEX dan chain, buka sekedar akses ke satu protokol DeFi saja. Akses, monitoring, dan analisis DeFi di seluruh ekosistem chain-supported menjadi fitur utama AURA API.​
+
+berarti dia bisa memilih dex mana yg terbaik, untuk chain ya semua yg di dukungnya saja tergantung permintaan user. untuk sign saya tidak mau demo, tapi saya mau real

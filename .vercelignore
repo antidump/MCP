@@ -1,0 +1,12 @@
+node_modules
+src
+*.test.js
+*.test.ts
+test-*.js
+test-*.html
+*.ps1
+.env
+.env.local
+coverage
+logs
+*.log

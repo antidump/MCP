@@ -1,0 +1,78 @@
+berikut hasil riset kemampuan asli AURA API yang bisa dioptimalkan tanpa biaya pihak ketiga:
+
+Kemampuan AURA API (Native, Tanpa Biaya Tambahan)
+1. Portfolio, Balance, Swap & Best DEX
+
+Sudah sepenuhnya native di AURA API: pengambilan data saldo, posisi DeFi, agregasi quote DEX, eksekusi swap, dan best DEX selection di 200+ blockchain chain.
+
+Mendukung full real-time portfolio, intent parsing, strategi, dan eksekusi.​
+
+2. Strategy Proposal & Airdrop Insight
+
+Native support: proposal strategi via LLM, deteksi peluang airdrop baru/eligible serta optimization (double-dip, maximize eligibility) tersedia langsung di AURA API.​
+
+3. Liquidation Risk (Likuidasi)
+
+Ada fitur identifikasi peluang likuidasi (liquidation risks) langsung di AURA API berdasar monitor posisi leverage dan protokol DeFi yang terhubung, seperti disebutkan di pengumuman resmi AdEx/AURA.​
+
+Fitur yang Tidak Ada di AURA API (Wajib Manual/Pihak Ketiga)
+1. Trading History Detil & PnL Calculation
+
+Tidak ditemukan endpoint publik langsung di AURA API untuk trading fill detail atau per-tx trading history dan calculation PnL nyata (umumnya hanya agregasi basic, bukan granular trade).
+
+Solusi: Optimalkan pencatatan manual melalui indexing node, atau gunakan API block explorer gratis untuk wallet/ticker spesifik jika memungkinkan (misal, Etherscan — gratis dengan rate limit).
+
+2. Trend/Narrative Detection & Governance Proposal
+
+Tidak ada support native. Biasanya fitur ini perlu data sosial & agregator, dan AURA API lebih fokus pada asset & yield not sentiment/trend data.
+
+Cara Optimasi Less Cash
+Maksimalkan endpoint native AURA API: Integrasikan seluruh portfolio, swap, strategi, airdrop, dan liquidation risk 100% ke endpoint resmi mereka. Ini sudah cukup luas untuk 90% kebutuhan DeFi assistant tanpa biaya apapun.​
+
+Untuk trading history/PnL detail atau governance/narrative: Gunakan solusi index/pencarian log sendiri (manual indexing wallet di node public/archive node RPC) jika memungkinkan — hanya butuh resource server sendiri, tidak wajib third-party berbayar.
+
+Jika benar-benar perlu pihak ketiga, prioritaskan yang ada free-tier (misal, beberapa block explorer API tetap free untuk usage terbatas, Dune Analytics alias gratis via query SQL jika pakai API public dashboard).
+
+Kesimpulan:
+
+Hampir seluruh core endpoint yang penting (portfolio, best DEX, strategis & airdrop, likuidasi) sudah native di AURA API dan bisa diintegrasikan langsung tanpa biaya tambahan.
+
+Hanya fitur detil trading history granular, narrative/trend, dan governance proposal yang belum tersedia native — dan bisa diusahakan dengan index atau block explorer gratis (bisa didesain open resource, no subscription pihak ketiga premium).
+
+Jika ingin step-by-step mapping endpoint resmi beserta contoh query-nya, silakan pilih fitur mana yang mau digarap dulu untuk integrasi less cash ini!Berikut hasil riset faktual: sebagian besar kebutuhan dasar DeFi assistant seperti portfolio, balance, swap aggregation, best DEX selection, strategi rekomendasi, airdrop detection, dan liquidation risk sudah tersedia native di AURA API dan dapat diintegrasikan langsung tanpa biaya tambahan ke pihak ketiga—cukup memakai endpoint yang sudah didukung.​
+
+Namun, untuk fitur advanced seperti:
+
+Trading history detil dan per-tx (PnL granular): AURA API hanya memberi ringkasan (basic summary), tidak granular trading fill/history, sehingga perlu indexing saat ini (misal, dari public block explorer/API wallet gratis).
+
+Trend/narrative detection & governance DAO proposal: AURA API tidak punya endpoint native, fitur ini mayoritas berbasis data eksternal atau sosial.
+
+Agar tetap “less cash”:
+
+Maksimalkan endpoint native AURA API sebagai backbone (nyaris semua kebutuhan utama DeFi assistant bisa terpenuhi tanpa biaya tambahan).
+
+Untuk kebutuhan history granular atau narrative, bisa gunakan indexer open-source/wallet search sendiri, atau layanan publik yang free-tier (contoh: Etherscan, Dune SQL API, tanpa langganan premium).
+
+Silakan pilih bagian mana yang ingin dibantu detail endpoint-nya—nanti akan diberikan contoh query/panduan langsung integrasi ke MCP!Berdasarkan dokumentasi resmi dan update AdEx AURA API, hampir semua kebutuhan utama DeFi assistant bisa di-handle tanpa biaya tambahan pihak ketiga, karena AURA memang sudah menyediakan endpoint untuk:
+
+Portfolio, saldo, posisi DeFi (lintas chain & protokol)
+
+Swap & pemilihan DEX terbaik otomatis
+
+Strategic rekomendasi via LLM (DCA, liquidation guard, dst)
+
+Deteksi airdrop eligible/upcoming
+
+Scanning liquidation risk (fitur ini disebutkan ada, bisa query ke AURA API untuk live liquidation risk)
+
+Fitur-fitur seperti trend detection, governance, atau trading history granular tidak tersedia secara eksplisit di API publik mereka, jadi:
+
+Maksimalkan endpoint AURA yang sudah tersedia (nyaris semua fitur utama DeFi sudah tercover tanpa tambahan cashflow!)
+
+Jika perlu detail granular (history, governance, onchain trend) dan ingin tetap less-cash, pakai:
+
+Indexing manual dengan node public/block explorer gratis
+
+Layanan tier gratis dari explorer atau open-source analytics (bukan yang berbayar seperti banyak agregator DeFi lain)
+
+Kesimpulannya, sangat memungkinkan membangun DeFi assistant dengan biaya nyaris nol, asalkan hanya bergantung pada AURA API dan solusi indexing manual atau layanan gratis untuk data yang belum didukung. Jika ingin contoh query/endpoint spesifik untuk diintegrasikan, sebutkan fiturnya!​

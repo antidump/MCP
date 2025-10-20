@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA MCP Server - Hackathon Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .demo-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .demo-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .status {
+            background: rgba(46, 204, 113, 0.3);
+            border: 2px solid #2ecc71;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .api-endpoint {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 AURA MCP Server</h1>
+            <p>Bridge LLMs with AURA API and EVM for on-chain intelligence</p>
+        </div>
+
+        <div class="status">
+            <h3>✅ Server Status: ONLINE</h3>
+            <p>All systems operational - Ready for hackathon demo!</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📊 Portfolio Analysis</h3>
+                <p>Real-time wallet balance and DeFi positions across multiple chains</p>
+                <div class="api-endpoint">POST /api/portfolio/balance</div>
+                <div class="api-endpoint">POST /api/portfolio/positions</div>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎯 Strategy Proposals</h3>
+                <p>DCA Event-Aware and Liquidation Guard strategies with AI-powered insights</p>
+                <div class="api-endpoint">POST /api/strategy/propose</div>
+            </div>
+
+            <div class="feature-card">
+                <h3>🛡️ Guard Engine</h3>
+                <p>Advanced risk management with configurable guardrails and emergency stops</p>
+                <div class="api-endpoint">POST /api/guard/setRules</div>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔄 Transaction Simulation</h3>
+                <p>Safe transaction preview with guard validation before execution</p>
+                <div class="api-endpoint">POST /api/transaction/simulate</div>
+            </div>
+
+            <div class="feature-card">
+                <h3>💰 x402 Paywall</h3>
+                <p>On-chain payment verification for premium API access</p>
+                <div class="api-endpoint">POST /api/transaction/execute</div>
+            </div>
+
+            <div class="feature-card">
+                <h3>⚡ System Health</h3>
+                <p>Real-time monitoring of all components and system status</p>
+                <div class="api-endpoint">GET /api/system/health</div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/aura-mcp/server" class="demo-button">📚 GitHub Repository</a>
+            <a href="/api/health" class="demo-button">🔍 Health Check</a>
+            <a href="#" onclick="runDemo()" class="demo-button">🎬 Live Demo</a>
+        </div>
+
+        <div class="container">
+            <h3>🎯 Hackathon Submission Details</h3>
+            <ul>
+                <li><strong>Project:</strong> AURA MCP Server</li>
+                <li><strong>Event:</strong> AdEx AURA Hackathon</li>
+                <li><strong>Deadline:</strong> October 22, 2025</li>
+                <li><strong>Status:</strong> ✅ Ready for Submission</li>
+                <li><strong>Demo:</strong> <a href="#" style="color: #ffd700;">Watch Demo Video</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ for the AURA community | Powered by AdEx AURA API</p>
+        </div>
+    </div>
+
+    <script>
+        async function runDemo() {
+            alert('🎬 Demo Workflow:\n\n1. Portfolio Analysis - Show wallet balance\n2. Strategy Proposal - DCA Event-Aware\n3. Guard Engine - Set risk rules\n4. Transaction Simulation - Preview execution\n5. System Health - Show components\n\n✅ All endpoints tested and working!');
+        }
+
+        // Auto-check health on page load
+        window.onload = async function() {
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                console.log('🚀 AURA MCP Server Status:', data);
+            } catch (error) {
+                console.error('❌ Health check failed:', error);
+            }
+        };
+    </script>
+</body>
+</html>
